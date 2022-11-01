@@ -10,7 +10,8 @@ namespace SnakeAndLadderProblem
     {
         public void SnakeLadder()
         {
-            int Position1 = 0;          
+            int Position1 = 0; 
+            int count1 = 0;
             int Num_Of_Players = 1;
             
             Console.Write("Enter s to Start to play : ");
@@ -60,8 +61,9 @@ namespace SnakeAndLadderProblem
                     Console.WriteLine("Player One wins");
                     break;
                 }
-
+                count1++;
             }
+            Console.WriteLine("Total Number of Times Dies has turn to win is " + count1);
         }
     }
 }
