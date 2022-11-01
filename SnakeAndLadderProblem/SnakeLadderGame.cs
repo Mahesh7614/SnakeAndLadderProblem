@@ -21,7 +21,7 @@ namespace SnakeAndLadderProblem
             Console.WriteLine("Player 1 at position : " + Position1);
 
             Random random = new Random();
-            while (Position1 != 100 || Position2 != 100)
+            while (Position1 != 100)
             {
                 int DiceNumber1 = random.Next(1, 7);
                 Console.WriteLine("Player rolled the Die ....");
