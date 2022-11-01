@@ -38,11 +38,13 @@ namespace SnakeAndLadderProblem
                     case 2:
                         Console.WriteLine("you Get Move Ahead option");
                         Console.WriteLine("Great! You get to Move Ahead, By " + DiceNumber1);
+                        Position1 = Position1 + DiceNumber1;
                         break;
 
                     case 3:
                         Console.WriteLine("But you get Move back option");
                         Console.WriteLine("Oops! you Need to Move Back, By" + DiceNumber1);
+                        Position1 = Position1 - DiceNumber1;
                         break;
                 }
 
