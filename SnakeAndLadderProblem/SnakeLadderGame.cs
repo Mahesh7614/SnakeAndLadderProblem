@@ -10,8 +10,7 @@ namespace SnakeAndLadderProblem
     {
         public void SnakeLadder()
         {
-            int Position1 = 0;
-            int Position2 = 0;
+            int Position1 = 0;          
             int Num_Of_Players = 1;
             
             Console.Write("Enter s to Start to play : ");
@@ -49,6 +48,17 @@ namespace SnakeAndLadderProblem
                         Position1 = Position1 - DiceNumber1;
                         Console.WriteLine("Current Position: " + Position1);
                         break;
+                }
+                if (Position1 < 0)
+                {
+                    Console.WriteLine("Please Restart");
+                    Position1 = 0;
+                    continue;
+                }
+                if (Position1 == 100)
+                {
+                    Console.WriteLine("Player One wins");
+                    break;
                 }
 
             }
